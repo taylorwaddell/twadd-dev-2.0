@@ -1,6 +1,10 @@
 document.addEventListener("mousemove", function (event) {
   // If a touch event is detected, return immediately
-  if ("ontouchstart" in window || navigator.maxTouchPoints) {
+  if (
+    "ontouchstart" in window ||
+    navigator.maxTouchPoints ||
+    window.innerWidth < 900
+  ) {
     return;
   }
 

@@ -8,13 +8,13 @@ body {
   color: var(--color-font-primary);
   font-family: "Inter", sans-serif, system-ui;
   padding-top: calc(100% / 65);
+  width: 825px;
 }
 
 header {
   background-color: var(--color-base-light);
   padding: var(--padding-2);
   border-radius: var(--border-round);
-  width: 100%;
 }
 
 h1,
@@ -42,38 +42,18 @@ a {
   transition: color var(--transition-quick);
 }
 
-p > a:hover {
-  color: var(--color-green);
-  text-decoration: underline;
-}
-
 strong {
   font-weight: var(--font-weight-bold);
   letter-spacing: var(--letter-spacing-comfortable);
 }
 
 .card {
-  width: 100%;
   border-radius: var(--border-round);
   border: var(--border-actionable);
   background-color: var(--color-base-light);
   padding: var(--padding-2);
 
   transition: border-color var(--transition);
-}
-
-.card:hover {
-  border-color: var(--border-actionable-hover-color);
-}
-
-.card:hover a {
-  background-image: linear-gradient(
-    var(--color-font-primary),
-    var(--color-font-primary)
-  );
-  background-size: 100% 1px;
-  background-position: left bottom;
-  background-repeat: no-repeat;
 }
 
 .button {
@@ -90,11 +70,6 @@ strong {
   padding: var(--padding-1);
   width: 35px;
   height: 35px;
-}
-
-.button:hover {
-  background-color: var(--color-base);
-  border-color: var(--border-actionable-hover-color);
 }
 
 .button:hover:active {
@@ -132,6 +107,10 @@ strong {
   fill: var(--color-base);
 }
 
+#typescript-icon > rect {
+  fill: var(--color-font-primary);
+}
+
 #typescript-icon-container {
   width: 25px;
   height: 25px;
@@ -146,6 +125,7 @@ strong {
 #read\.cv-icon {
   width: 28px;
   height: 28px;
+  /* fill: var(--color-font-primary); */
 }
 
 #shakaCircle {
@@ -162,45 +142,11 @@ strong {
 #shakaCircle > .social-icon {
   width: 30px;
   height: 30px;
+  fill: rgb(200 200 200);
 }
 
 #shakaCircle > svg {
   transition: fill var(--transition);
-}
-
-#shakaCircle:hover > svg {
-  fill: var(--color-green);
-}
-
-#follower {
-  position: absolute;
-  background-color: var(--color-base-dark);
-  border: var(--border-actionable);
-  color: var(--color-font-primary);
-  font-size: var(--font-size-paragraph);
-  padding: 5px;
-  border-radius: 5px;
-  z-index: 1000;
-  transform: translateX(15%) translateY(60%);
-}
-
-/* SVG Link Arrow */
-#arrow-container {
-  transform: translateZ(0px) translateX(-6px);
-  transition: transform 300ms ease;
-}
-
-#arrow-shaft {
-  transform: scaleX(0);
-  transition: transform 300ms ease;
-}
-
-a:hover > #arrow-container {
-  transform: translateZ(0px) translateX(0px);
-}
-
-a:hover > #arrow-container > #arrow-shaft {
-  transform: scaleX(1);
 }
 
 /* Faux Tailwind / Bootstrap */
@@ -268,4 +214,84 @@ a:hover > #arrow-container > #arrow-shaft {
   clip: rect(0, 0, 0, 0);
   border: 0;
   white-space: nowrap; /* added to ensure the content doesn't wrap */
+}
+
+@media screen and (min-width: 900px) {
+  #shakaCircle:hover > svg {
+    fill: var(--color-green);
+  }
+
+  #follower {
+    position: absolute;
+    background-color: var(--color-base-dark);
+    border: var(--border-actionable);
+    color: var(--color-font-primary);
+    font-size: var(--font-size-paragraph);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
+    transform: translateX(15%) translateY(60%);
+  }
+
+  /* SVG Link Arrow */
+  #arrow-container {
+    transform: translateZ(0px) translateX(-6px);
+    transition: transform 300ms ease;
+  }
+
+  #arrow-shaft {
+    transform: scaleX(0);
+    transition: transform 300ms ease;
+  }
+
+  a:hover > #arrow-container {
+    transform: translateZ(0px) translateX(0px);
+  }
+
+  a:hover > #arrow-container > #arrow-shaft {
+    transform: scaleX(1);
+  }
+
+  p > a:hover {
+    color: var(--color-green);
+    text-decoration: underline;
+  }
+
+  .card:hover {
+    border-color: var(--border-actionable-hover-color);
+  }
+
+  .card:hover a {
+    background-image: linear-gradient(
+      var(--color-font-primary),
+      var(--color-font-primary)
+    );
+    background-size: 100% 1px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+  }
+
+  .button:hover {
+    background-color: var(--color-base);
+    border-color: var(--border-actionable-hover-color);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    padding-top: calc(10vw / 2);
+    width: 90vw;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  #follower {
+    display: none;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
 }
