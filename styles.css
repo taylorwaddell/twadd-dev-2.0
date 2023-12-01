@@ -234,21 +234,21 @@ strong {
   }
 
   /* SVG Link Arrow */
-  #arrow-container {
+  .arrow-container {
     transform: translateZ(0px) translateX(-6px);
     transition: transform 300ms ease;
   }
 
-  #arrow-shaft {
+  .arrow-shaft {
     transform: scaleX(0);
     transition: transform 300ms ease;
   }
 
-  a:hover > #arrow-container {
+  a:hover > .arrow-container {
     transform: translateZ(0px) translateX(0px);
   }
 
-  a:hover > #arrow-container > #arrow-shaft {
+  a:hover > .arrow-container > .arrow-shaft {
     transform: scaleX(1);
   }
 
