@@ -1,0 +1,37 @@
+:root {
+  --font-weight-extralight: 200;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --font-size-heading-1: calc(18 / 16 * 1rem);
+  --font-size-heading-3: 1rem;
+  --font-size-paragraph: calc(14 / 16 * 1rem);
+  --font-line-height-cushy: calc(24 / 16 * 1rem);
+  --font-line-height-relaxed: 1rem;
+  --font-line-height-normal: 1;
+  --letter-spacing-comfortable: 0.025em;
+
+  --color-base-dark: rgb(20 20 20);
+  --color-base: rgb(30 30 30);
+  --color-base-light: rgb(36 36 36);
+  --color-font-lighter: rgb(50 50 50);
+  --color-base-lightest: rgb(70 70 70);
+  --color-green: rgb(7 164 143);
+
+  --color-font-primary: rgb(200 200 200);
+  --color-font-muted: rgb(78 78 78);
+
+  --border-round-barely: 2px;
+  --border-round: 5px;
+  --border-actionable: calc(0.75 / 16 * 1rem) solid var(--color-font-lighter);
+  --border-actionable-hover-color: var(--color-base-lightest);
+
+  --padding-1: calc(5 / 16 * 1rem);
+  --padding-2: calc(10 / 16 * 1rem);
+  --padding-button: calc(4 / 16 * 1rem) calc(8 / 16 * 1rem);
+
+  --transition: 300ms ease;
+  --transition-out: 300ms ease-out;
+  --transition-quick: 150ms ease;
+}

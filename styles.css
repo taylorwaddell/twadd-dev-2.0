@@ -1,0 +1,271 @@
+@import url("./variables.css");
+
+html {
+  background-color: var(--color-base);
+}
+
+body {
+  color: var(--color-font-primary);
+  font-family: "Inter", sans-serif, system-ui;
+  padding-top: calc(100% / 65);
+}
+
+header {
+  background-color: var(--color-base-light);
+  padding: var(--padding-2);
+  border-radius: var(--border-round);
+  width: 100%;
+}
+
+h1,
+h2 {
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-heading-1);
+  letter-spacing: var(--letter-spacing-comfortable);
+  color: var(--color-font-muted);
+}
+
+h4 {
+  margin: 0px;
+}
+
+p {
+  font-size: var(--font-size-paragraph);
+  font-weight: var(--font-weight-extralight);
+  line-height: var(--font-line-height-relaxed);
+}
+
+a {
+  color: var(--color-font-primary);
+  text-decoration: none;
+
+  transition: color var(--transition-quick);
+}
+
+p > a:hover {
+  color: var(--color-green);
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: var(--font-weight-bold);
+  letter-spacing: var(--letter-spacing-comfortable);
+}
+
+.card {
+  width: 100%;
+  border-radius: var(--border-round);
+  border: var(--border-actionable);
+  background-color: var(--color-base-light);
+  padding: var(--padding-2);
+
+  transition: border-color var(--transition);
+}
+
+.card:hover {
+  border-color: var(--border-actionable-hover-color);
+}
+
+.card:hover a {
+  background-image: linear-gradient(
+    var(--color-font-primary),
+    var(--color-font-primary)
+  );
+  background-size: 100% 1px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.button {
+  background-color: var(--color-base-light);
+  border: var(--border-actionable);
+  border-radius: var(--border-round);
+  padding: var(--padding-button);
+  cursor: pointer;
+
+  transition: all var(--transition-out);
+}
+
+.button-icon {
+  padding: var(--padding-1);
+  width: 35px;
+  height: 35px;
+}
+
+.button:hover {
+  background-color: var(--color-base);
+  border-color: var(--border-actionable-hover-color);
+}
+
+.button:hover:active {
+  background-color: var(--color-base-dark);
+}
+
+.cushy {
+  line-height: var(--font-line-height-cushy);
+}
+
+.underline-best {
+  background-image: linear-gradient(var(--color-green), var(--color-green));
+  background-size: 100% 1px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.social-icon {
+  width: 25px;
+  height: 25px;
+  color: var(--color-font-primary);
+  fill: var(--color-font-primary);
+}
+
+.stack-icon {
+  width: 25px;
+  height: 25px;
+  color: var(--color-font-primary);
+  fill: var(--color-base);
+}
+
+#typescript-icon {
+  width: 18px;
+  height: 18px;
+  fill: var(--color-base);
+}
+
+#typescript-icon-container {
+  width: 25px;
+  height: 25px;
+  background-color: var(--color-base);
+  border-radius: var(--border-round-barely);
+}
+
+.fill-color-base {
+  fill: var(--color-base);
+}
+
+#read\.cv-icon {
+  width: 28px;
+  height: 28px;
+}
+
+#shakaCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  border-radius: 50%;
+  padding: var(--padding-button);
+}
+
+#shakaCircle > .social-icon {
+  width: 30px;
+  height: 30px;
+}
+
+#shakaCircle > svg {
+  transition: fill var(--transition);
+}
+
+#shakaCircle:hover > svg {
+  fill: var(--color-green);
+}
+
+#follower {
+  position: absolute;
+  background-color: var(--color-base-dark);
+  border: var(--border-actionable);
+  color: var(--color-font-primary);
+  font-size: var(--font-size-paragraph);
+  padding: 5px;
+  border-radius: 5px;
+  z-index: 1000;
+  transform: translateX(15%) translateY(60%);
+}
+
+/* SVG Link Arrow */
+#arrow-container {
+  transform: translateZ(0px) translateX(-6px);
+  transition: transform 300ms ease;
+}
+
+#arrow-shaft {
+  transform: scaleX(0);
+  transition: transform 300ms ease;
+}
+
+a:hover > #arrow-container {
+  transform: translateZ(0px) translateX(0px);
+}
+
+a:hover > #arrow-container > #arrow-shaft {
+  transform: scaleX(1);
+}
+
+/* Faux Tailwind / Bootstrap */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px; /* Adjust this value for spacing between grid items */
+}
+
+.flex {
+  display: flex;
+}
+
+.gap-1 {
+  gap: calc(10 / 16 * 1rem);
+}
+
+.gap-\.5 {
+  gap: calc(5 / 16 * 1rem);
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.h-95 {
+  height: 95vh;
+}
+
+.mx-auto {
+  margin: 0 auto;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap; /* added to ensure the content doesn't wrap */
+}
