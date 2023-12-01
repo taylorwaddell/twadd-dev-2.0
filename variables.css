@@ -30,13 +30,11 @@
   --padding-1: calc(5 / 16 * 1rem);
   --padding-2: calc(10 / 16 * 1rem);
   --padding-button: calc(4 / 16 * 1rem) calc(8 / 16 * 1rem);
-  --width: 825px
 
   --transition: 300ms ease;
   --transition-out: 300ms ease-out;
   --transition-quick: 150ms ease;
 }
-
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -45,12 +43,6 @@
     --font-weight-medium: 500;
     --font-weight-bold: 700;
 
-    --font-size-heading-1: calc(18 / 16 * 1rem);
-    --font-size-heading-3: 1rem;
-    --font-size-paragraph: calc(14 / 16 * 1rem);
-    --font-line-height-cushy: calc(24 / 16 * 1rem);
-    --font-line-height-relaxed: 1rem;
-    --font-line-height-normal: 1;
     --letter-spacing-comfortable: 0.025em;
 
     --color-base-dark: rgb(20 20 20);
@@ -62,22 +54,5 @@
 
     --color-font-primary: rgb(200 200 200);
     --color-font-muted: rgb(78 78 78);
-
-    --border-round-barely: 2px;
-    --border-round: 5px;
-    --border-actionable: calc(0.75 / 16 * 1rem) solid var(--color-font-lighter);
-    --border-actionable-hover-color: var(--color-base-lightest);
-
-    --padding-1: calc(5 / 16 * 1rem);
-    --padding-2: calc(10 / 16 * 1rem);
-    --padding-button: calc(4 / 16 * 1rem) calc(8 / 16 * 1rem);
-    --width: 825px
-
-    --transition: 300ms ease;
-    --transition-out: 300ms ease-out;
-    --transition-quick: 150ms ease;
   }
 }
-
-
-
