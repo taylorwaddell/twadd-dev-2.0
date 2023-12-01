@@ -132,8 +132,8 @@ strong {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   background-color: black;
   border-radius: 50%;
   padding: var(--padding-button);
