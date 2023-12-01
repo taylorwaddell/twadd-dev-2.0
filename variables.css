@@ -16,16 +16,15 @@
   --color-base: rgb(213, 213, 213);
   --color-base-light: rgb(206, 206, 206);
   --color-font-lighter: rgb(190, 190, 190);
-  --color-base-lightest: rgb(170 170 170);
   --color-green: rgb(7 164 143);
 
   --color-font-primary: rgb(36, 36, 36);
-  --color-font-muted: rgb(180 180 180);
+  --color-font-muted: rgb(170 170 170);
 
   --border-round-barely: 2px;
   --border-round: 5px;
   --border-actionable: calc(0.75 / 16 * 1rem) solid var(--color-font-lighter);
-  --border-actionable-hover-color: var(--color-base-lightest);
+  --border-actionable-hover-color: var(--color-font-muted);
 
   --padding-1: calc(5 / 16 * 1rem);
   --padding-2: calc(10 / 16 * 1rem);
@@ -49,7 +48,6 @@
     --color-base: rgb(30 30 30);
     --color-base-light: rgb(36 36 36);
     --color-font-lighter: rgb(50 50 50);
-    --color-base-lightest: rgb(70 70 70);
     --color-green: rgb(7 164 143);
 
     --color-font-primary: rgb(200 200 200);
