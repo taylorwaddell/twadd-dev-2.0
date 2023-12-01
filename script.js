@@ -1,3 +1,23 @@
+let light = "rgb(213, 213, 213)";
+let dark = "rgb(30, 30, 30)";
+
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  document
+    .querySelector('meta[name="theme-color"]')
+    .setAttribute("content", dark);
+}
+
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (event) => {
+    document
+      .querySelector('meta[name="theme-color"]')
+      .setAttribute("content", event.matches ? dark : light);
+  });
+
 document.addEventListener("mousemove", function (event) {
   // If a touch event is detected, return immediately
   if (
