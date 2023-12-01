@@ -25,8 +25,9 @@ h2 {
   color: var(--color-font-muted);
 }
 
-h4 {
+h3 {
   margin: 0px;
+  font-size: var(--font-size-heading-3);
 }
 
 p {
