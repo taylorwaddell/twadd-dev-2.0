@@ -126,7 +126,6 @@ strong {
 #read\.cv-icon {
   width: 28px;
   height: 28px;
-  /* fill: var(--color-font-primary); */
 }
 
 #shakaCircle {
@@ -154,7 +153,7 @@ strong {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 10px; /* Adjust this value for spacing between grid items */
+  grid-gap: 10px;
 }
 
 .flex {
@@ -214,7 +213,7 @@ strong {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
-  white-space: nowrap; /* added to ensure the content doesn't wrap */
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 900px) {
