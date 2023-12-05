@@ -104,11 +104,20 @@ strong {
   fill: var(--color-font-primary);
 }
 
+.button-small {
+  width: 15px;
+  height: 15px;
+}
+
 .stack-icon {
   width: 25px;
   height: 25px;
   color: var(--color-font-primary);
   fill: var(--color-base);
+}
+
+.stack-icon.framer > path {
+  fill: var(--color-font-primary);
 }
 
 .typescript-icon {
