@@ -289,6 +289,7 @@ strong {
 @media screen and (max-width: 900px) {
   body {
     padding-top: calc(10vw / 2);
+    padding-bottom: calc(10vw / 2);
     width: 90vw;
   }
 
