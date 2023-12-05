@@ -57,6 +57,15 @@ strong {
   transition: border-color var(--transition);
 }
 
+.card + .card {
+  margin-top: var(--margin-1);
+}
+
+.card.reading {
+  display: flex;
+  justify-content: space-between;
+}
+
 .button {
   background-color: var(--color-base-light);
   border: var(--border-actionable);
@@ -102,17 +111,17 @@ strong {
   fill: var(--color-base);
 }
 
-#typescript-icon {
+.typescript-icon {
   width: 18px;
   height: 18px;
   fill: var(--color-base);
 }
 
-#typescript-icon > rect {
+.typescript-icon > rect {
   fill: var(--color-font-primary);
 }
 
-#typescript-icon-container {
+.typescript-icon-container {
   width: 25px;
   height: 25px;
   background-color: var(--color-base);
@@ -261,7 +270,7 @@ strong {
     border-color: var(--border-actionable-hover-color);
   }
 
-  .card:hover a {
+  .card:hover .cta {
     background-image: linear-gradient(
       var(--color-font-primary),
       var(--color-font-primary)

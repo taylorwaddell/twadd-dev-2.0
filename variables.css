@@ -29,6 +29,7 @@
   --padding-1: calc(5 / 16 * 1rem);
   --padding-2: calc(10 / 16 * 1rem);
   --padding-button: calc(4 / 16 * 1rem) calc(8 / 16 * 1rem);
+  --margin-1: 1rem;
 
   --transition: 300ms ease;
   --transition-out: 300ms ease-out;
