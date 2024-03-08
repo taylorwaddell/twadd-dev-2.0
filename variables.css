@@ -17,6 +17,8 @@
   --color-base-light: rgb(206, 206, 206);
   --color-font-lighter: rgb(190, 190, 190);
   --color-green: rgb(7 164 143);
+  --color-orange: rgba(227, 91, 6, 0.95);
+  --color-orange-50: rgba(227, 91, 6, 0.5);
 
   --color-font-primary: rgb(36, 36, 36);
   --color-font-muted: rgb(170 170 170);
@@ -29,6 +31,7 @@
   --padding-1: calc(5 / 16 * 1rem);
   --padding-2: calc(10 / 16 * 1rem);
   --padding-button: calc(4 / 16 * 1rem) calc(8 / 16 * 1rem);
+  --margin-\.5: 0.5rem;
   --margin-1: 1rem;
 
   --transition: 300ms ease;
