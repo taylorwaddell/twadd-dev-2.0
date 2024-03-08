@@ -16,11 +16,6 @@ body {
   box-shadow: 0 0 0 2px var(--color-base-light), 0 0 0 4px var(--color-orange);
 }
 
-/* ::selection {
-  color: var(--color-base);
-  background-color: var(--color-orange);
-} */
-
 a {
   border-radius: var(--border-round-barely);
 }
