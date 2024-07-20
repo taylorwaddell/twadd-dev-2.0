@@ -54,3 +54,15 @@ document.addEventListener("mousemove", function (event) {
   // Call the function with the current event target
   updateFollowerContentAndVisibility(event.target, event);
 });
+
+const cards = document.querySelectorAll(".delay-show");
+
+function easeInCards() {
+  cards.forEach((card, index) => {
+    setTimeout(() => {
+      card.classList.add("show");
+    }, index * 100);
+  });
+}
+
+easeInCards();

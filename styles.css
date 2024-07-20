@@ -14,6 +14,8 @@ body {
 *:focus {
   outline: none;
   box-shadow: 0 0 0 2px var(--color-base-light), 0 0 0 4px var(--color-orange);
+
+  transition: box-shadow var(--transition);
 }
 
 a {
@@ -77,6 +79,17 @@ strong {
 .card.reading {
   display: flex;
   justify-content: space-between;
+}
+
+section .delay-show {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.25s ease-in-out, transform 0.75s ease-in;
+}
+
+section .delay-show.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .reader a {
