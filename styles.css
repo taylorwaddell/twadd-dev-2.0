@@ -69,7 +69,7 @@ strong {
 }
 
 .card + .card {
-  margin-top: var(--margin-1);
+  margin-top: var(--margin-\.5);
 }
 
 .card.reading + .card {
@@ -280,10 +280,6 @@ article.reader {
   display: flex;
 }
 
-.d-none {
-  display: none;
-}
-
 .gap-1 {
   gap: calc(10 / 16 * 1rem);
 }
@@ -302,6 +298,10 @@ article.reader {
 
 .justify-content-between {
   justify-content: space-between;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
 }
 
 .align-center {
