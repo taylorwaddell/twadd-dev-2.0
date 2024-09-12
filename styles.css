@@ -280,6 +280,10 @@ article.reader {
   display: flex;
 }
 
+.d-none {
+  display: none;
+}
+
 .gap-1 {
   gap: calc(10 / 16 * 1rem);
 }
